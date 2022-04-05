@@ -1,0 +1,231 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+} 
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+margin: 0 auto;
+background-color: black;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+ header {
+
+
+height: 100%;
+width: 100%;
+  color: #f1f1f1;
+  background-color: rgb(108, 131, 143);
+
+  top: auto;
+padding: 20px;
+  margin: 0;
+}
+
+header a {
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+}
+
+header nav.nav > .donate {
+  float: right;
+position: relative;
+margin-top: 0;
+padding: 2px;
+ 
+}
+
+.container {
+height: 100%;
+width: 100%;
+ 
+  background-color: rgb(108, 131, 143);
+
+
+
+}
+
+section#top {
+  /* Take full size */
+  height: 100%;
+  width: 100%;
+
+  /* Stick to the top */
+  position: relative;
+  top: 0;
+    background-color: rgb(108, 131, 143);
+
+
+margin: 0 auto;
+padding: 100px;
+
+}
+
+
+
+section#top > h1 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+section#top > h1 + p {
+  text-align: center;
+  color: white;
+}
+
+
+
+.container > section#top > a {
+  color: green;
+
+  text-align: center;
+}
+
+section.main {
+  /* Take full size */
+  height: 100%;
+  width: 100%;
+
+  /* Stick to the top */
+
+ 
+ background-color: white;
+ margin: 0 auto;
+ padding: 170px;
+}
+
+section.main > h1 {
+  text-align: center;
+  color: black;
+}
+
+section.main > h1 + p{
+  text-align: center;
+  color: black;
+}
+
+
+
+
+/*
+4th box with 2 images*/
+ 
+
+
+
+
+section#box-main{
+  height: 100%;
+  width: 100%;
+  background-color:transparent;
+margin-top: 200px;
+margin-bottom: 50px;
+padding: 100px 50px 50px  100px;
+  text-align: center;
+}
+
+
+section.left-box {
+  float: left;
+  width: 50%;
+  height: 50%;
+  margin-top: 0 auto;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+
+section.right-box {
+  
+  float:right;
+  width: 50%;
+  height: 50%;
+  margin-top: 0 auto;
+  margin-bottom: 50px;
+padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+
+section#box-main, button {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+
+
+
+/*
+bottom box
+*/
+
+
+.bottom {
+text-align: center;
+  height: 100%;
+  width: 100%;
+  clear: both;
+  bottom: 0;
+padding: 130px;
+margin: 0 auto;
+background-color: #f1f1f1;
+}
+
+.bottom > button {
+  margin-top: 20px;
+  padding: 20px;
+
+}
+
+
+
+
+
+footer {
+
+  height: 100%;
+  width: 100%;
+
+color: grey;
+clear: both;
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media only screen and (max-width: 1200px){
+  /*Tablets [601px -> 1200px]*/
+}
+@media only screen and (max-width: 600px){
+/*Big smartphones [426px -> 600px]*/
+}
+@media only screen and (max-width: 425px){
+/*Small smartphones [325px -> 425px]*/
+}
